@@ -1,0 +1,54 @@
+.my-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('https://imgs.search.brave.com/yP59Q4i3O6ObtiGz5u0pAkM8pdBQQKsFbWYUVKmGk_I/rs:fit:1000:337:1/g:ce/aHR0cHM6Ly9teWZs/aXh0di5jb20vaW1h/Z2VzL2xvZ28ucG5n'); */
+    background-color: rgba(0,0,0,.8);
+  
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.my-form img{
+    /* width:100% ; */
+    position: absolute;
+    margin-left: 5%;
+    width: 95%;
+    overflow: hidden;
+    
+}
+.form-container{
+    width: 50%;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    z-index: 5;
+    
+    border: 1px solid rgb(59, 113, 239);
+}
+.form-container .btn {
+    background-color:rgba(0,0,0,.4);
+
+}
+.form-container input{
+    background-color:rgba(0,0,0,.4);
+   
+}
+
+/* input: */
+
+.new-user{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center; 
+    /* row-gap: 20px; */
+    column-gap: 7%;
+
+}
+.new-user p{
+    margin: 0px;
+    color: white;
+}

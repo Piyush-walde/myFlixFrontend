@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.banner{
+    width:100% ;
+    padding: 50px 5%;
+    height: 92vh;
+    background-color: #3b3b3b;
+    margin-top: 8vh;
+    display: inline-block;
+}
+.top{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 10px;
+    position:relative;
+}
+.top > img{
+  width: 100%;
+  position: absolute;
+}
+.top-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    display: flex;
+   align-items: flex-end;
+}
+.top-details{
+    width: 40%;
+    height: 40%;
+    /* background-color: white; */
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+}
+.top-details h1{
+    text-transform: uppercase;
+}
+
+.top-details p{
+    font-size: 20px;
+}
+.top-details button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2ef64;
+    font-weight: bold;
+}
+
+
+/* css for category  */
+
+.category{
+  width: 100%;
+  padding: 30px 5%;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.category:nth-child(odd){
+    background-color:#282323;
+}
+.category:nth-child(even){
+    background-color: #303030;
+}
+.category-title{
+    font-family: 'Bebas Neue', cursive;
+    color: #b96161;
+    font-size: 30px;
+}
+
+.movie-list{
+    width: 100%;
+    padding: 10px 0px;
+    /* background-color: red; */
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:2.5% ;
+    row-gap: 15px;
+    /* justify-content: space-between; */
+}
+
+.movie{
+    width: 18%;
+    height: 300px;
+    background-color: green;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+ 
+}
+.movie > img{
+    width: 100%;
+    position: absolute;
+    
+}
+.movie-overlay{
+    width: 100%;
+    height:50%;
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    align-self: flex-end;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.movie-overlay > h2{
+    font-size: 30px;
+}
+.utils{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.utils button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    background-color: #b96161;
+    font-weight: bold;
+    font-size: 14px;
+}
+.rating{
+    font-size: 18px;
+
+}
+
+
+
+/* css for responsivenes */
+/* (min-width:970px)  */
+@media only screen and (max-width:1300px){
+    .banner{
+        height: 60vh;
+    }
+    .top-details {
+        height: 60%;
+        padding: 25px;
+        row-gap: 7px;
+    }
+.movie-list{
+    margin-top: 8px;
+    row-gap: 25px;
+}
+
+.movie{
+    width: 23%;
+    height: 280px;
+    
+}
+
+.movie-overlay{
+    padding: 15px;
+}
+.movie-overlay>h2{
+    font-size: 27px;
+
+}
+
+}
+
+/* min width 700px */
+@media only screen and (max-width:970px) {
+
+    .banner{
+        height: 55vh;
+        padding: 30px 3%;
+
+    }
+
+    .top-details {
+        height: 60%;
+        padding: 20px;
+        row-gap: 5px;
+        /* font-size: ; */
+    }
+    .top-details h1{
+        font-size: 30px;
+    }
+
+    .top-details p{
+        font-size: 18px;
+    }
+    .top-details button{
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+    .movie{
+        width: 31%;
+        height: 260px;
+        
+    }
+    .movie-list{
+        column-gap: 3.5%;
+    }
+
+    
+.movie-overlay{
+    padding: 15px;
+}
+.movie-overlay>h2{
+    font-size: 24px;
+
+}
+
+.utils button{
+    padding: 9px 12px;
+}
+
+}
+
+/* min width 500px */
+@media only screen and (max-width:650px){
+
+    .banner{
+        margin-top: 6vh;
+    }
+    .top-details{
+        height: 63%;
+    }
+
+    .top-details h1{
+        font-size: 25px;
+    }
+
+    .top-details p{
+        font-size: 16px;
+    }
+
+    .movie-overlay{
+        padding: 10px;
+        /* font-size: 15px; */
+    }
+    .movie-overlay>h2{
+        font-size: 20px;
+    
+    }
+    .utils button{
+        padding: 4px 8px;
+    }
+    .rating{
+        font-size: 14px;
+    }
+
+    .movie{
+        height: 225px;
+    }
+}
+
+/* for mobile view  */
+
+@media only screen and (max-width:550px){
+ .banner{
+     padding: 21px 3%;
+ }
+ .top-details {
+    height: 59%;
+    width: 66%;
+}
+.category{
+    padding: 21px 5%;
+}
+
+.top-details h1{
+    font-size: 22px;
+}
+.category-title{
+    font-size: 24px;
+}
+.movie-list{
+    margin-top: 0px;
+    justify-content: space-between;
+    row-gap: 14px;
+}
+.movie{
+    width: 48%;
+}
+.utils button{
+    padding: 2px 10px;
+    font-size: 13px;
+}
+.movie-overlay{
+    height: 45%;
+}
+}
+
+@media only screen and (max-width:365px)
+{
+    .top-details {
+        height: 65% !important;
+        /* width: 66%; */
+    }
+}
