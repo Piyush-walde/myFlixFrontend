@@ -40,11 +40,6 @@ function Player()
 
   },[params.id]);
 
-  // useEffect(()=>{
-  //     if(playerVisible===true){
-  //       videoPlayer.current.currentTime=userMovie.watchtime;
-  //     }
-  // },[playerVisible]);
 
   function play(){
  
@@ -152,7 +147,7 @@ return (
 
                           <video ref={videoPlayer} controls className='movie-player' autoPlay>
                             
-                            <source src={`http://localhost:8000/movies/stream/${movie._id}`}/>
+                            <source src={`https://myflix-apibypiyush.herokuapp.com/movies/stream/${movie._id}`}/>
 
                           </video>
 

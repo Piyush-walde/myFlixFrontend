@@ -19,7 +19,7 @@ function Header(){
 
         setUserName(myflix_user.username)
 
-        fetch("http://localhost:8000/movies/",{
+        fetch("https://myflix-apibypiyush.herokuapp.com/movies/",{
         headers:{
             "Authorization":`Bearer ${myflix_user.token}`
         }
