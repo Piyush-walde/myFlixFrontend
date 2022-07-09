@@ -150,7 +150,7 @@
         height: 60vh;
     }
     .top-details {
-        height: 60%;
+        height: 92%;
         padding: 25px;
         row-gap: 7px;
     }
@@ -185,7 +185,7 @@
     }
 
     .top-details {
-        height: 60%;
+        height: 89%;
         padding: 20px;
         row-gap: 5px;
         /* font-size: ; */
@@ -233,6 +233,7 @@
     }
     .top-details{
         height: 63%;
+        width: 79%;
     }
 
     .top-details h1{
@@ -270,8 +271,8 @@
      padding: 21px 3%;
  }
  .top-details {
-    height: 59%;
-    width: 66%;
+    height: 70%;
+    width: 80%;
 }
 .category{
     padding: 21px 5%;
@@ -303,7 +304,7 @@
 @media only screen and (max-width:365px)
 {
     .top-details {
-        height: 65% !important;
+        height: 86% !important;
         /* width: 66%; */
     }
 }
