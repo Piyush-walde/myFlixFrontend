@@ -77,7 +77,7 @@ return (
                                 <h1>{top.name}</h1>
 
                                 <p>
-                                 {top.description?.substring(0,100)+"..."}
+                                 {top.description?.substring(0,75)+"..."}
                                 </p>
 
                                 <Link to={`/player/${top._id}`}>
