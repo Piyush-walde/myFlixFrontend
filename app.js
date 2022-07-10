@@ -1,9 +1,10 @@
 const express=require('express');
 const path=require('path');
-
+const cors=require('cors');
 const app=express();
 const PORT=process.env.PORT || 3000;
 
+app.use(cors());
 
 if(process.env.NODE_ENV==="production"){
     app.use(express.static("build"))
@@ -15,7 +16,7 @@ if(process.env.NODE_ENV==="production"){
 // git add .
 // $ git commit -am "make it better"
 // $ git push heroku master
-
+// git config core.autocrlf true
 
 
 app.listen(PORT,()=>{
